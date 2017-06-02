@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" href="css/index-pay.css">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.min.js"></script>
+</head>
+<body>
+    <div class="index-pay index-bank index-order index-message">
+        <div class="mask">
+            <div class="img">
+                <img src="image/pay-sucess.png" alt="">
+                <a href="#"></a>
+            </div>
+            <span>
+                <img src="image/pay-close.png" alt="">
+            </span>
+        </div>
+        <!--banner开始-->
+        <div class="banner">
+            <nav class="nav">
+                <a href="index-bank.html" class="back" style="background:url(image/jp-back.png) no-repeat 0 0;"></a>
+                <div class="order">
+                    <h1>SUBMIT ORDERS</h1>
+                    <h1>
+                        <span><img src="image/pay-dot.png" alt=""></span>
+                        &nbsp;银行卡信息&nbsp;
+                        <span><img src="image/pay-dot.png" alt=""></span>
+                    </h1>
+                </div>
+                <a href="index-addBank.html" class="back" style="background:url(image/add.png) no-repeat 0 0;float: right"></a>
+            </nav>
+        </div>
+        <!--banner结束-->
+        <!--银行卡banner开始-->
+        <div class="messplay swiper">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="image/card-message.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="image/card-message.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="image/card-message.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--银行卡banner结束-->
+        <!--详细信息开始-->
+        <div class="bank-intro">
+            <ul>
+                <li><span></span><input type="text" placeholder="开户行：建设银行"></li>
+                <li><span></span><input type="text" placeholder="支付额度限制：50,000RMB"></li>
+                <li><span></span><input type="text" placeholder="卡内余额查询：向9967发送"><b style="background: #2BD2FC;">短信查询</b></li>
+                <li><span></span><input type="text" placeholder="使用期限：2019-06-14"></li>
+                <li><span></span><input type="text" placeholder="使用方式：人脸识别"><a style="background: #06E5CA;" href="index-face.html">切换</a></li>
+                <li><span></span><input type="text" placeholder="绑定状态：已绑定"><b style="background: #4B4B4B;">解除绑定</b></li>
+            </ul>
+            <a href="#" class="use-bank">使用此银行卡</a>
+        </div>
+        <!--详细信息结束-->
+    </div>
+</body>
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        spaceBetween: 30
+    });
+    var bank=document.querySelector('.bank-intro .use-bank');
+    var mask=document.querySelector('.index-message .mask');
+    var close=document.querySelector('.index-message .mask span');
+    bank.onclick= function () {
+        mask.style.display='block';
+    }
+    close.onclick=function(){
+        mask.style.display='none';
+    }
+</script>

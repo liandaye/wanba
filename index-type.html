@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>玩吧</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" href="css/index-pay.css">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<div class="index-order index-pay index-type">
+    <!--banner开始-->
+    <div class="banner">
+        <nav class="nav">
+            <a href="index-order.html" class="back" style="background:url(image/jp-back.png) no-repeat 0 0;"></a>
+            <div class="order">
+                <h1>SUBMIT ORDERS</h1>
+                <h1>
+                    <span><img src="image/pay-dot.png" alt=""></span>
+                    &nbsp;选择支付方式&nbsp;
+                    <span><img src="image/pay-dot.png" alt=""></span>
+                </h1>
+            </div>
+        </nav>
+    </div>
+    <!--banner结束-->
+    <!--银行卡开始-->
+    <div class="bank">
+        <ul>
+            <li>
+                <a href="index-bank.html">
+                    <span style="background:url(image/type-1.png)"></span>
+                    <div>
+                        <h1>银行卡支付</h1>
+                        <h4>使用绑定的银行卡可在线支付</h4>
+                    </div>
+                    <b>3</b>
+                </a>
+            </li>
+            <li>
+                <a href="index-bank.html">
+                    <span style="background:url(image/type-2.png)"></span>
+                    <div>
+                        <h1>本地钱包支付</h1>
+                        <h4>使用本地钱包可获得更大优惠</h4>
+                    </div>
+                    <b style="background: url(image/type-hot.png) no-repeat center center;"></b>
+                </a>
+            </li>
+            <li>
+                <a href="index-bank.html">
+                    <span style="background:url(image/type-3.png)"></span>
+                    <div>
+                        <h1>货到付款</h1>
+                        <h4>选择货到付款提交订单后完成此次操作</h4>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--银行卡结束-->
+    <!--支付开始-->
+    <div class="swiper-container pay-bank">
+        <h1><span style="background:url(image/type-line.png) no-repeat 0 center;"></span>
+            第三方支付
+            <span style="background:url(image/type-line.png) no-repeat 0 center;"></span>
+        </h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="" style="background:url(image/type-zhifu.png) no-repeat center center;"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="" style="background:url(image/pay-wx.png) no-repeat center center;"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="" style="background:url(image/pay-qq.png) no-repeat center center;"></a>
+            </div>
+        </div>
+    </div>
+    <!--支付结束-->
+    <!--底部开始-->
+    <footer class="foot">
+        <div class="know message" style="padding-top: 0;border:0;">
+            <li>
+                <p style="width:100%;text-align: center;color: #999;font-size: 14px;">本地钱包支付保障您的支付安全</p>
+                <p style="width:100%;text-align: center;color: #999;font-size: 10px;">Hui wallet wallet payment to protect your financial security</p>
+                <p style="width:0.66rem;height:0.06rem;background: #E5E5E5;margin:0.1rem auto;"></p>
+            </li>
+        </div>
+    </footer>
+    <!--底部结束-->
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.pay-bank', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 'auto',
+            paginationClickable: true
+        });
+    </script>
+</div>
+</body>
+</html>
